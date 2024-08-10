@@ -10,9 +10,9 @@ function Eyes() {
            
            <div className='w-[13vw] h-[12.5vw] rounded-full bg-zinc-100 flex justify-center items-center'>
 
-            <div className='w-2/3 h-2/3 rounded-full bg-zinc-900 '>
+            <div className=' relative w-2/3 h-2/3 rounded-full bg-zinc-900 '>
 
-            <div className='line w-full h-6  bg-red-500'>
+            <div className='line absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] w-full h-6  '>
                 <div className='w-6 h-6 rounded-full bg-red-100'></div>
             </div>
             
@@ -21,8 +21,8 @@ function Eyes() {
            </div>
            <div className='w-[13vw] h-[12.5vw] rounded-full bg-zinc-100 flex justify-center items-center'>
 
-            <div className='w-2/3 h-2/3 rounded-full bg-zinc-900 '>
-              <div className='line w-full h-6  bg-red-500'>
+            <div className=' relative w-2/3 h-2/3 rounded-full bg-zinc-900 '>
+              <div className='line absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]  w-full h-6 '>
               <div className='w-6 h-6 rounded-full bg-zinc-100 '></div>
               </div>
 
