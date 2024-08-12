@@ -18,9 +18,6 @@ function Footer() {
 
             </div>
 
-
-
-
             <div className='w-1/2 p-20 '>
                 <h1 className='text-7xl uppercase leading-none -mb-5  font-bold '>Presentations</h1>
                 <div className='dets font-light mt-[30vh] '>

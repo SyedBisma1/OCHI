@@ -1,16 +1,23 @@
+import { motion } from 'framer-motion';
 import React from 'react'
 import { FaArrowUpLong } from "react-icons/fa6";
 
 
 function LandingPage() {
   return (
-    <div className='w-full  h-screen bg-zinc-900 pt-1'>
+    <div data-scroll data-scroll-section data-scroll-speed="-.3" className='w-full  h-screen bg-zinc-900 pt-1'>
       <div className='textStructure mt-52 px-20'>
 
         {["we create", "Eye-Opening", "presentations"].map((item, index) => {
-          return <div className="masker ">
+          return <div key={index} className="masker ">
             <div className='w-fit flex items-end overflow-hidden'>
-              {index === 1 && (<div className=' mr-5 w-[9vw] h-[5.4vw] bg-green-600  rounded-md'></div>)}
+              {index === 1 && (
+                <motion.div
+                  initial={{ width: 0 }}
+                  animate={{ width: "9vw" }}
+                  transition={{ ease: [0.76, 0, 0.24, 1], duration: 1 }}
+                  className=' mr-5 w-[9vw] h-[5.4vw] bg-red-600 bg-cover bg-[url("https://ochi.design/wp-content/uploads/2022/04/content-image01.jpg")]  rounded-md'></motion.div>
+              )}
               <h1 className='uppercase text-[7.3vw]  leading-[6vw] tracking-tighter font-bold'>{item}</h1>
             </div>
           </div>
@@ -22,7 +29,7 @@ function LandingPage() {
         {["For public and private companise ",
           "From the first pitch to IPO",
         ].map((item, index) =>
-          <p className=' text-,d font-light tracking-tight leading-none'>{item}</p>
+          <p key={index} className=' text-,d font-light tracking-tight leading-none'>{item}</p>
         )}
         <div className="start flex items-center gap-3">
           <div className='px-7 py-2 border-[2px] border-zinc-500 rounded-full font-light text-sm uppercase text-md'>start the project</div>
