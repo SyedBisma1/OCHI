@@ -29,7 +29,7 @@ function Featured() {
                         onHoverEnd={() => handleHoverEnd(0)}
                         className="cardcontainer w-1/2 h-[70vh] relative"
                     >
-                        <h1 className='flex -right-1 overflow-hidden absolute text-[#dbff5a] -translate-x-1/2 top-1/2 -translate-y-1/2 text-8xl z-[9] leading-none tracking-tighter'>
+                        <h1 className='flex  right-0 overflow-hidden absolute text-[#caf23a] translate-x-1/2 top-1/2 -translate-y-1/2 text-9xl font-semibold z-[9] leading-none tracking-tighter'>
                             {"FYDE".split('').map((item, index) => (
                                 <motion.span
                                     key={index}
@@ -50,16 +50,12 @@ function Featured() {
                             />
                         </div>
                     </motion.div>
-
-
-
-
                     <motion.div
                         onHoverStart={() => handleHover(1)} 
                         onHoverEnd={() => handleHoverEnd(1)}  
                         className="cardcontainer w-1/2 h-[70vh] relative"
                     >
-                        <h1 className='flex left-0 overflow-hidden absolute text-[#dbff5a] -translate-x-1/2 top-1/2 -translate-y-1/2 text-8xl z-[9] leading-none tracking-tighter'>
+                        <h1 className='flex left-0 overflow-hidden absolute text-[#caf23a]  -translate-x-1/2 top-1/2 -translate-y-1/2 text-9xl font-semibold z-[9] leading-none tracking-tighter'>
                             {"VISE".split('').map((item, index) => (
                                 <motion.span
                                     key={index}
@@ -80,9 +76,6 @@ function Featured() {
                             />
                         </div>
                     </motion.div>
-
-
-
                 </div>
             </div>
         </div>
